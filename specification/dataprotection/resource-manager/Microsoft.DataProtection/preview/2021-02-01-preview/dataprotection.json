@@ -2647,8 +2647,7 @@
       "properties": {
         "properties": {
           "$ref": "#/definitions/BackupInstance",
-          "description": "BackupInstanceResource properties",
-          "x-ms-client-flatten": true
+          "description": "BackupInstanceResource properties"
         }
       },
       "title": "BackupInstanceResource"
@@ -2771,8 +2770,7 @@
       "properties": {
         "properties": {
           "$ref": "#/definitions/BackupVault",
-          "description": "BackupVaultResource properties",
-          "x-ms-client-flatten": true
+          "description": "BackupVaultResource properties"
         }
       },
       "required": [
@@ -3014,8 +3012,7 @@
         },
         "properties": {
           "$ref": "#/definitions/ClientDiscoveryForProperties",
-          "description": "Properties for the given operation.",
-          "x-ms-client-flatten": true
+          "description": "Properties for the given operation."
         }
       },
       "title": "ClientDiscoveryValueForSingleApi",
@@ -3833,8 +3830,7 @@
         },
         "properties": {
           "$ref": "#/definitions/OperationExtendedInfo",
-          "description": "End time of the operation",
-          "x-ms-client-flatten": true
+          "description": "End time of the operation"
         },
         "startTime": {
           "description": "Start time of the operation",
