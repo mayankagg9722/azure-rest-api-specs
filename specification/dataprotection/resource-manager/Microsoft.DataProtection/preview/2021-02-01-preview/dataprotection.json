@@ -758,6 +758,7 @@
           },
           {
             "name": "backupPolicyName",
+            "description": "Name of the policy",
             "in": "path",
             "required": true,
             "type": "string"
@@ -1992,7 +1993,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstances}/findRestorableTimeRanges": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/findRestorableTimeRanges": {
       "post": {
         "tags": [
           "FindRestorableTimeRanges"
@@ -2015,7 +2016,8 @@
             "$ref": "#/parameters/SubscriptionId"
           },
           {
-            "name": "backupInstances",
+            "name": "backupInstanceName",
+            "description": "The name of the backup instance",
             "in": "path",
             "required": true,
             "type": "string"
@@ -2367,9 +2369,7 @@
     "AzureBackupFindRestorableTimeRangesRequest": {
       "description": "List Restore Ranges Request",
       "required": [
-        "sourceDataStoreType",
-        "startTime",
-        "endTime"
+        "sourceDataStoreType"
       ],
       "type": "object",
       "properties": {
@@ -2387,11 +2387,11 @@
           }
         },
         "startTime": {
-          "description": "Start time for the List Restore Ranges request",
+          "description": "Start time for the List Restore Ranges request. ISO 8601 format.",
           "type": "string"
         },
         "endTime": {
-          "description": "End time for the List Restore Ranges request",
+          "description": "End time for the List Restore Ranges request. ISO 8601 format.",
           "type": "string"
         }
       }
